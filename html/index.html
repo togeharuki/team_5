@@ -6,16 +6,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <span id="text"></span>
+    <script type="text/javascript">
+        function updateClock() {
+            var now = new Date();
+            var nowhour = now.getHours();
+            var nowminutes = now.getMinutes();
+            var nowseconds = now.getSeconds();
+
+            var text = nowhour + "：" + nowminutes + "：" + nowseconds;
+            document.getElementById("text").innerHTML = text;
+        }
+
+        
+        setInterval(updateClock, 1000);
+    </script>
+    
     <h2>みんなの学校紹介をします！</h2>
-    <ul id="school-introduction">
-        <li><a href="大畠_学校紹介.html">大畠の学校へ</a></li>
-        <li><a href="唐下_学校紹介.html">唐下の学校へ</a></li>
-        <li><a href="中井_学校紹介.html">中井の学校へ</a></li>
-        <li><a href="渡辺_学校紹介.html">渡辺の学校へ</a></li>
-    </ul>
+
+    
+    <button id="changeColorBtn">背景色を変更</button>
+
+    <table id="School introduction">
+        <a href="大畠_学校紹介.html"><p>大畠の学校へ</p></a>
+        <a href="唐下_学校紹介.html"><p>唐下の学校へ</p></a>
+        <a href="中井_学校紹介.html"><p>中井の学校へ</p></a>
+        <a href="渡辺_学校紹介.html"><p>渡辺の学校へ</p></a>
+    </table>
+
     <footer>
         <p>2024</p>
     </footer>
+
+    <script type="text/javascript">
+        
+        function changeBackgroundColor() {
+            var colors = ["#f8b400", "#f85f36", "#6a0572", "#3c3c3c", "#007f5f"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        document.getElementById("changeColorBtn").addEventListener("click", changeBackgroundColor);
+    </script>
 </body>
 </html>
-
