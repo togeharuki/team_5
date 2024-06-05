@@ -5,6 +5,21 @@
 　<title>みんなの学校紹介</title>
 </head>
 <body>
+    <span id="text"></span>
+    <script type="text/javascript">
+        function updateClock() {
+            var now = new Date();
+            var nowhour = now.getHours();
+            var nowminutes = now.getMinutes();
+            var nowseconds = now.getSeconds();
+
+            var text = nowhour + "：" + nowminutes + "：" + nowseconds;
+            document.getElementById("text").innerHTML = text;
+        }
+
+        // 1秒ごとにupdateClockを呼び出す
+        setInterval(updateClock, 1000);
+    </script>
 　<h2>みんなの学校紹介をします！</h2>
 　<table id="School introduction">
     <a href="大畠_学校紹介.html"><p>大畠の学校へ</p></a>
