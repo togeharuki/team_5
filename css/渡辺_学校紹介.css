@@ -1,38 +1,110 @@
-html{
-    overflow-x:hidden;
+/* Google Fontsを追加 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* 基本スタイル */
+html {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
-body{
+body {
     background-color: #ecf1f8;
+    margin: 0;
+    padding: 0;
 }
-h1:first-letter {
-    font-size: 2em;
-    color: #7172ac;
-  }
-h2{
-    padding: 0.3em 0.4em;/*文字の上下 左右の余白*/
-    color: #494949;/*文字色*/
-    background: #f4f4f4;/*背景色*/
-    border-left: solid 5px #7db4e6;/*左線*/
-    border-bottom: solid 5px #d7d7d7;/*下線*/
+header {
+    background-color: #7db4e6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
-td.scroll_go{
-    font-size: 15px;
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
 }
-td.feature{
-    font-size: 15px;
+main {
+    padding: 20px;
 }
-td.class_teacher_name{
-    font-size: 15px;
+#introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
-td.event_occurred_during_enrollment{
-    font-size: 15px;
+.wrap {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
 }
-.oohata_comment{
-    font-size: 15px;
+.slideshow {
+    display: flex;
+    animation: loop-slide 20s infinite linear;
 }
-.touge_comment{
-    font-size: 15px;
+.slideshow li {
+    list-style: none;
 }
-.nakai_comment{
-    font-size: 15px;
+.content {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* 詳細セクションのスタイル */
+#details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+#details p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* コメントセクションのスタイル */
+.comment {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.one_comment {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.comment p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #7db4e6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+footer p {
+    margin: 0;
 }
