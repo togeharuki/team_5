@@ -1,7 +1,6 @@
 /* Google Fontsを追加 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* 基本スタイル */
 html {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
@@ -60,7 +59,6 @@ main {
     }
 }
 
-/* 詳細セクションのスタイル */
 #details {
     background-color: #fff;
     padding: 20px;
@@ -73,7 +71,6 @@ main {
     margin: 10px 0;
 }
 
-/* コメントセクションのスタイル */
 .comment {
     background-color: #f4f4f4;
     padding: 20px;
@@ -90,7 +87,6 @@ main {
     margin: 10px 0;
 }
 
-/* フッタースタイル */
 footer {
     background-color: #7db4e6;
     color: #fff;
@@ -105,25 +101,25 @@ footer a {
     text-decoration: none;
     margin-right: 10px;
 }
-/* ボタンのテキストを黒色に設定 */
+
 button {
-    background-color: #7db4e6; /* 背景色を統一 */
-    color: black; /* テキストの色を黒に設定 */
-    border: none; /* 枠線を消す */
-    padding: 10px 20px; /* パディングを追加してサイズを調整 */
-    border-radius: 4px; /* 角を丸くする */
-    cursor: pointer; /* マウスカーソルを指示棒に変更 */
-    font-family: 'Roboto', sans-serif; /* フォントを統一 */
-    font-weight: 700; /* 太字に設定 */
+    background-color: #7db4e6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 button a {
-    color: black; /* リンクのテキストの色を黒に設定 */
-    text-decoration: none; /* 下線を消す */
+    color: black;
+    text-decoration: none;
 }
 
 button:hover {
-    background-color: #5d94c9; /* マウスホバー時の色変更 */
+    background-color: #5d94c9;
 }
 
 footer p {
