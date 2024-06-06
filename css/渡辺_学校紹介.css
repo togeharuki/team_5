@@ -95,7 +95,7 @@ footer {
     background-color: #7db4e6;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -105,6 +105,27 @@ footer a {
     text-decoration: none;
     margin-right: 10px;
 }
+/* ボタンのテキストを黒色に設定 */
+button {
+    background-color: #7db4e6; /* 背景色を統一 */
+    color: black; /* テキストの色を黒に設定 */
+    border: none; /* 枠線を消す */
+    padding: 10px 20px; /* パディングを追加してサイズを調整 */
+    border-radius: 4px; /* 角を丸くする */
+    cursor: pointer; /* マウスカーソルを指示棒に変更 */
+    font-family: 'Roboto', sans-serif; /* フォントを統一 */
+    font-weight: 700; /* 太字に設定 */
+}
+
+button a {
+    color: black; /* リンクのテキストの色を黒に設定 */
+    text-decoration: none; /* 下線を消す */
+}
+
+button:hover {
+    background-color: #5d94c9; /* マウスホバー時の色変更 */
+}
+
 footer p {
     margin: 0;
 }
