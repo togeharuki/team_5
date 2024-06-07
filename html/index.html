@@ -2,8 +2,10 @@
 <html lang="ja">
 <head>
 　<meta charset="UTF-8">
-　<title>みんなの学校紹介</title>
-<script src="リセットボタン.js"></script>
+　<title>みんなの学校紹介(team-5)</title>
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
 <body>
     <span id="text"></span>
@@ -13,7 +15,6 @@
             var nowhour = now.getHours();
             var nowminutes = now.getMinutes();
             var nowseconds = now.getSeconds();
-
             var text = nowhour + "：" + nowminutes + "：" + nowseconds;
             document.getElementById("text").innerHTML = text;
         }
@@ -22,19 +23,19 @@
     
     <h2>みんなの学校紹介をします！</h2>
 
-    
     <button id="changeColorBtn">背景色を変更</button>
 
     <table id="School introduction">
-        <a href=""><p>大畠の学校へ</p></a>
+        <a href="大畠の母校.html"><p>大畠の学校へ</p></a>
         <a href="唐下_学校紹介.html"><p>唐下の学校へ</p></a>
         <a href="中井_学校紹介.html"><p>中井の学校へ</p></a>
         <a href="渡辺_学校紹介.html"><p>渡辺の学校へ</p></a>
+        <a href="おみくじ.html"><p>おみくじが引けるよ！</p></a>
 
     </table>
 
     <footer>
-        <p>2024</p>
+        <p>&copy;2024年度制作</p>
     </footer>
 
     <script type="text/javascript">
@@ -47,6 +48,6 @@
 
         document.getElementById("changeColorBtn").addEventListener("click", changeBackgroundColor);
     </script>
-
+    <script src="../js/script.js"></script>
 </body>
 </html>

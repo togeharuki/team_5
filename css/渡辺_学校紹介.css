@@ -1,7 +1,6 @@
 /* Google Fontsを追加 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* 基本スタイル */
 html {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
@@ -60,7 +59,6 @@ main {
     }
 }
 
-/* 詳細セクションのスタイル */
 #details {
     background-color: #fff;
     padding: 20px;
@@ -73,7 +71,6 @@ main {
     margin: 10px 0;
 }
 
-/* コメントセクションのスタイル */
 .comment {
     background-color: #f4f4f4;
     padding: 20px;
@@ -90,12 +87,11 @@ main {
     margin: 10px 0;
 }
 
-/* フッタースタイル */
 footer {
     background-color: #7db4e6;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -105,6 +101,27 @@ footer a {
     text-decoration: none;
     margin-right: 10px;
 }
+
+button {
+    background-color: #7db4e6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #5d94c9;
+}
+
 footer p {
     margin: 0;
 }
