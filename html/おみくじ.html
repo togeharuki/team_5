@@ -13,21 +13,11 @@
         </div>
         <p id="result"></p>
     </div>
-    <script>
-        window.onload = function () {
-            // おみくじ
-            // この順番が良い順番らしい（吉と中吉が逆になることも）
-            const list = ["大吉","吉","中吉","小吉","末吉","凶","大凶"];
-        
-            document.getElementById("button").onclick = function () {
-                var random = Math.floor(Math.random() * list.length);
-                document.getElementById("result").textContent = list[random];
-            }
-        }
-    </script>
-    <p></p>
+    
     <button class="button_TOP" onclick="window.location.href='index.html'">--TOPに戻る--</button>
-    <p></p>
     <p>&copy;作成者：唐下</p>
+
+    <!-- 外部JavaScriptファイルの読み込み -->
+    <script src="../js/omikuji.js"></script>
 </body>
 </html>
